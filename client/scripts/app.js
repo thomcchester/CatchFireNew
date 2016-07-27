@@ -1,12 +1,12 @@
-var chickApp = angular.module("chickApp", ['ngMaterial', 'ngMessages', 'ngRoute', 'googlechart']);
+var App = angular.module("App", ['ngMaterial', 'ngMessages', 'ngRoute', 'googlechart']);
 
-chickApp.config(["$routeProvider", "$locationProvider", function($routeProvider, $locationProvider){
+App.config(["$routeProvider", "$locationProvider", function($routeProvider, $locationProvider){
 
 }]);
 
-var chickAppAdmin = angular.module("chickAppAdmin", ['ngMaterial', 'ngMessages', 'ngRoute', 'md.data.table']);
+var AppAdmin = angular.module("AppAdmin", ['ngMaterial', 'ngMessages', 'ngRoute', 'md.data.table']);
 
-chickAppAdmin.config(["$routeProvider", "$locationProvider", function($routeProvider, $locationProvider){
+AppAdmin.config(["$routeProvider", "$locationProvider", function($routeProvider, $locationProvider){
     $routeProvider.
         when("/admin", {
             templateUrl: "/views/admin.html",
@@ -25,14 +25,14 @@ chickAppAdmin.config(["$routeProvider", "$locationProvider", function($routeProv
         });
 }]);
 
-var chickAppRegistration = angular.module("chickAppRegistration", ['ngMaterial', 'ngRoute']);
+var AppRegistration = angular.module("AppRegistration", ['ngMaterial', 'ngRoute']);
 
-chickAppRegistration.config(["$routeProvider", "$locationProvider", function($routeProvider, $locationProvider){
+AppRegistration.config(["$routeProvider", "$locationProvider", function($routeProvider, $locationProvider){
 
 }]);
 
-var chickAppLogin = angular.module("chickAppLogin", ['ngMaterial', 'ngRoute']);
+var AppLogin = angular.module("AppLogin", ['ngMaterial', 'ngRoute']);
 
-chickAppLogin.config(["$routeProvider", "$locationProvider", function($routeProvider, $locationProvider){
+AppLogin.config(["$routeProvider", "$locationProvider", function($routeProvider, $locationProvider){
 
 }]);
